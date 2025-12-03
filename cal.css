@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    background-color: rgb(20, 19, 19);
+    display: flex;
+    flex-direction: column;  
+    align-items: center;       
+}
+header {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: rgba(20, 20, 20, 0.7);
+    box-shadow: 0 0 15px rgba(0, 200, 80, 0.7);
+}
+
+header p {
+    color: white;
+    font-size: xx-large;
+    margin: 0;
+}
+
+main {
+    width: 95%;
+    max-width: 420px;
+    margin-top: 45px;            
+    display: flex;
+    justify-content: center;     
+}
+#calc {
+    width: 100%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 22px;
+    box-shadow: 0 0 25px rgba(0, 200, 80, 0.7);
+}
+#calcInput {
+    width: 100%;
+    height: 8%;
+    font-size: larger;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+    text-align: right;
+    margin-bottom: 15px;
+}
+.row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 12px;
+}
+.rowclean{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+button {
+    padding: 15px 0;
+    font-size: large;
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    transition: 0.5s;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.28);
+    transform: translateY(-3px);
+}
+
+.equal {
+    background: #0074ff;
+}
+
+.equal:hover {
+    background: #005dcc;
+}
+
+.clean {
+    background: #ff4444;
+}
+.clean:hover {
+    background: #cd1818;
+}
+.cleanback {
+    background: #ffa600;
+}
+.cleanback:hover {
+    background: #ad750c;
+}
+.row:last-child {
+    grid-template-columns: 1fr 1fr;
+}
+#history{
+    color: white;
+}
+.cleanHistory{
+     background: #9b59b6;  
+    color: white;
+}
+.cleanHistory:hover {
+    background: #7d3c98; 
+}
+
+

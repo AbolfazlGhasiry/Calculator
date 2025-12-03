@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+
+<body>
+    <section>
+        <header>
+            <p>ماشین حساب Aphone</p>
+        </header>
+    </section>
+
+    <main>
+        <div id="calc">
+            <p id="history"></p>
+            <input type="text" id="calcInput">
+
+            <div class="row">
+                <button class="hesab" onclick="hesab('sin')">sin</button>
+                <button class="hesab" onclick="hesab('cos')">cos</button>
+                <button class="hesab" onclick="hesab('tan')">tan</button>
+                <button class="hesab" onclick="hesab('log')">log</button>
+            </div>
+            <div class="row">
+                <button class="hesab" onclick="hesab('m2')">m2</button>
+                <button class="hesab" onclick="hesab('m8')">m8</button>
+                <button class="hesab" onclick="hesab('m10')">m10</button>
+                <button class="hesab" onclick="hesab('m16')">m16</button>
+            </div>
+            <div class="rowclean">
+                <button class="clean" onclick="clear()">C</button>
+                <button class="cleanback" onclick="clearback()">⬅️</button>
+                <button class="cleanHistory" onclick="hesab('hiscle')">clean history</button>
+            </div>
+            <div class="row">
+                <button class="hesab" onclick="hesab('jazr')">√x</button>
+                <button class="hesab" onclick="hesab('tavan')">^</button>
+                <button class="hesab" onclick="hesab('/')">/</button>
+                <button class="hesab" onclick="hesab('*')">*</button>
+            </div>
+            <div class="row">
+                <button class="numbers" onclick="add(7)">7</button>
+                <button class="numbers" onclick="add(8)">8</button>
+                <button class="numbers" onclick="add(9)">9</button>
+                <button class="hesab" onclick="hesab('-')">-</button>
+            </div>
+            <div class="row">
+                <button class="numbers" onclick="add(4)">4</button>
+                <button class="numbers" onclick="add(5)">5</button>
+                <button class="numbers" onclick="add(6)">6</button>
+                <button class="hesab" onclick="hesab('+')">+</button>
+            </div>
+            <div class="row">
+                <button class="numbers" onclick="add(1)">1</button>
+                <button class="numbers" onclick="add(2)">2</button>
+                <button class="numbers" onclick="add(3)">3</button>
+                <button class="mo" onclick="hesab('.')">.</button>
+            </div>
+            <div class="row">
+                <button class="numbers" onclick="add(0)">0</button>
+                <button class="equal" onclick="hesab('=')">=</button>
+            </div>
+        </div>
+    </main>
+    <script src="cal.js"></script>
+
+</body>
+
+</html>
